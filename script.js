@@ -100,7 +100,12 @@ function autofillemail(){
   }
 }
  
- window.onload = function(){
+ window.onload = function () {
+  if (document.getElementById("email")) {
     autofillemail();
+  }
+
+  if (document.getElementById("welcome")) {
     showmessage();
- }
+  }
+};
